@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title>Generatron</title>
+</head>
+<body>
+<h1>Welcome to the randum number generatron</h1>
+   <button id="rand-single" onclick="randsin()">Click here to print a single-digit random number</button>
+<br>
+   <button id="rand-double" onclick="randdub()">Click here to print a double-digit random number</button>
+<br>
+   <button id="rand-triple" onclick="randtrip()">Click here to print a triple-digit random number</button>
+<br>
+
+   <button id="rand-quad" onclick="randquad()">Click here to print a quadruple-digit random number</button>
+<p id="out1"></p>
+<script >
+    function randsin(){
+        var val = Math.floor(Math.random()*10)
+        document.getElementById("out1").innerHTML = val;
+    }
+    function randdub(){
+        var val = Math.floor(Math.random()*100)
+        document.getElementById("out1").innerHTML = val;
+    }
+    function randtrip(){
+        var val = Math.floor(Math.random()*1000)
+        document.getElementById("out1").innerHTML = val;
+    }
+    function randquad(){
+        var val = Math.floor(Math.random()*10000)
+        document.getElementById("out1").innerHTML = val;
+    }
+</script>
+</body>
